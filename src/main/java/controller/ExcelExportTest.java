@@ -57,7 +57,7 @@ public class ExcelExportTest {
 			os = new FileOutputStream(file.getAbsolutePath() + "/" + date.getTime() + ".xlsx");
 			System.out.println("正在导出xlsx...");
 			ExcelUtil.exportExcel(titleList, studentArray, os);
-			System.out.println("导出完成...共" + count + "条数据,用时" + (new Date().getTime() - date.getTime()) + "ms");
+			System.out.println("导出完成...共" + count + "条数据,用时" + (System.currentTimeMillis() - date.getTime()) + "ms");
 			System.out.println("文件路径：" + file.getAbsolutePath() + "/" + date.getTime() + ".xlsx");
 		} catch (Exception e) {
 			e.printStackTrace();
