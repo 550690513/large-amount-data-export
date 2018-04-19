@@ -14,5 +14,5 @@
 当然，导出速度也和电脑配置相关，以上数据测试环境如下：  
 系统：windows 7  
 处理器：Inter(R) Core（TM）i5-4590 CPU @ 3.30GHz 3.30GHz  
-内存：16 GB  
+内存：16 GB  
 工具：IntelliJ IDEA  
