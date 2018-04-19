@@ -2,7 +2,7 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.cheung</groupId>
-	<artifactId>poi</artifactId>
+	<artifactId>largeAmountDataExport</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>poi Maven Webapp</name>
@@ -65,6 +65,6 @@
 
 	</dependencies>
 	<build>
-		<finalName>poi</finalName>
+		<finalName>largeAmountDataExport</finalName>
 	</build>
 </project>
