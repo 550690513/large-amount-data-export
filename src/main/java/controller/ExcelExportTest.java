@@ -22,9 +22,13 @@ import java.util.LinkedHashMap;
 public class ExcelExportTest {
 
 	public static void main(String[] args) throws IOException {
-		// 模拟100W条数据,存入JsonArray,此处使用fastJson(号称第一快json解析)快速解析大数据量数据
-		// 至于容量问题,Java数组的length必须是非负的int，所以它的理论最大值就是java.lang.Integer.MAX_VALUE = 2^31-1 = 2147483647。
-		// 由于xlsx最大支持行数为1048576行,此处模拟了1048573调数据,剩下的3条占用留给自定义的excel的头信息和列项.
+		/**
+		 * 模拟100W条数据,存入JsonArray,此处使用fastJson(号称第一快json解析)快速解析大数据量数据
+		 * 至于容量问题,Java数组的length必须是非负的int，所以它的理论最大值就是java.lang.Integer.MAX_VALUE = 2^31-1 = 2147483647。
+		 * 由于xlsx最大支持行数为1048576行,此处模拟了1048573调数据,剩下的3条占用留给自定义的excel的头信息和列项.
+		 */
+		// int count = 100000;
+		// int count = 1000000;
 		int count = 1048573;
 		JSONArray studentArray = new JSONArray();
 		for (int i = 0; i < count; i++) {
