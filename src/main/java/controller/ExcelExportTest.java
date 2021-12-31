@@ -29,7 +29,7 @@ public class ExcelExportTest {
 		 */
 		// int count = 100000;
 		// int count = 1000000;
-		int count = 1048573;
+		int count = 1048574;
 		JSONArray studentArray = new JSONArray();
 		for (int i = 0; i < count; i++) {
 			Student s = new Student();
@@ -38,7 +38,7 @@ public class ExcelExportTest {
 			s.setBirthday(new Date());
 			s.setHeight(i);
 			s.setWeight(i);
-			s.setSex(i % 2 == 0 ? false : true);
+			s.setSex(i % 2 != 0);
 			studentArray.add(s);
 		}
 
@@ -77,7 +77,9 @@ public class ExcelExportTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			os.close();
+			if (os != null) {
+				os.close();
+			}
 		}
 
 	}
